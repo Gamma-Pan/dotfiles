@@ -11,10 +11,6 @@ abbr -a ls 'lsd'
 abbr -a ll 'lsd -l'
 abbr -a lt 'lsd --tree'
 
-function conf -d "Go to config directory"
-	cd /home/pan/.config/$argv[1]
-end
-
 function qfind -d "Quick case invariant search in current dir"
 	find . -type f -exec grep -i -l $argv[1] {} \;
 end
